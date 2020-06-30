@@ -1,9 +1,11 @@
 const express=require("express");
-const routesHeroe=express.Router();
+const routeHeroe=express.Router();
 const moduloHeroe=require("../controller/controllerHeroe.js");
 
-routesHeroe.get("/",moduloHeroe.homePage);
+routeHeroe.get("/",moduloHeroe.homePage);
+routeHeroe.get("/heroes",moduloHeroe.heroe);
+routeHeroe.get("/heroes/detalle/:id",moduloHeroe.heroeDetalle);
 
 
 
-module.exports=routesHeroe;
+module.exports=routeHeroe;
