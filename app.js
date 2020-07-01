@@ -3,7 +3,6 @@ const app=express();
 //requerimos las rutas
 const routeHeroe=require("./routes/heroes.js");
 const routeModuloMain=require("./routes/main.js");
-const routerMain = require("./routes/main.js");
 
 app.use("/",routeHeroe);
 
